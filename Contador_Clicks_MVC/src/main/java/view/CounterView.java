@@ -7,6 +7,7 @@ public class CounterView extends JFrame {
     private JLabel clickCountLabel = new JLabel("0");
     private JButton incrementButton = new JButton("Increment");
     private JButton resetButton = new JButton("Reset");
+    private JButton decrementButton = new JButton("Decrement");
 
     public CounterView(int x, int y){
         setTitle("Click Counter");
@@ -16,6 +17,7 @@ public class CounterView extends JFrame {
         add(clickCountLabel);
         add(incrementButton);
         add(resetButton);
+        add(decrementButton);
         setVisible(true);
     }
 
@@ -30,4 +32,6 @@ public class CounterView extends JFrame {
     public JButton getResetButton(){
         return resetButton;
     }
+
+    public JButton getDecrementButton(){ return decrementButton; }
 }
