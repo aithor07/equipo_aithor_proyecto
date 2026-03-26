@@ -10,6 +10,9 @@ public class CounterModel {
     public int getClickCount() {
         return clickCount;
     }
+    public void resetClickCount(){
+        setClickCount(0);
+    }
 
     public void setClickCount(int clickCount) {
         this.clickCount = clickCount;

@@ -14,6 +14,7 @@ public class CounterController implements ActionListener {
         this.model = model;
         this.view = view;
         this.view.getIncrementButton().addActionListener(this);
+        this.view.getResetButton().addActionListener(this);
     }
 
     public CounterModel getModel() {
@@ -28,7 +29,10 @@ public class CounterController implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource().equals(getView().getIncrementButton())){
             getModel().incrementClickCount();
+        } else if (e.getSource().equals(getView().getResetButton())){
+            getModel().resetClickCount();
         }
         getView().getClickCountLabel().setText(getModel().getClickCount()+"");
+
     }
 }
