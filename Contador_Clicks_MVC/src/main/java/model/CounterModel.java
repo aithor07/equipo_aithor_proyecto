@@ -21,4 +21,8 @@ public class CounterModel {
     public void incrementClickCount() {
         setClickCount(getClickCount() + 1);
     }
+
+    public void decrementClickCount(){
+        setClickCount(getClickCount() - 1);
+    }
 }
