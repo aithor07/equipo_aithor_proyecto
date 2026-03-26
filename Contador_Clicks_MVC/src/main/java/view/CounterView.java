@@ -14,10 +14,10 @@ public class CounterView extends JFrame {
         setSize(x, y);
         setLayout(new FlowLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        add(clickCountLabel);
         add(incrementButton);
+        add(clickCountLabel);
+        add(decrementButton); //Moved the positions of the buttons for more intuitiveness.
         add(resetButton);
-        add(decrementButton);
         setVisible(true);
     }
 
